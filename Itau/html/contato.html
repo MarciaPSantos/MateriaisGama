@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gama Academy - Contato</title>
+
+    <!-- chamando um arquivo de estilo dentro da nossa biblioteca-->
+    <link rel="stylesheet" href="../css/estilos.css">
+
+
+</head>
+<body>
+     <!--Criando um menu utilizando uma tabela-->
+     <table border="0" width="100%" class="menu">
+        <!--inserir uma linha-->
+        <tr>
+            <!-- inserindo coluna para o nosso menu-->
+            <td align="center"> <a href="../html/index.html"><img src="../imagens/logo.png" width="160" height="40"></a> </td>
+            <td align="right">QUEM SOMOS</td>
+            <td align="right">PARA PESSOAS</td>
+            <td align="right">PARA EMPRESAS</td>
+            <td align="right">CONTATO</td>
+            <td align="right">CONTEÚDOS</td>
+        </tr>   
+
+    </table>
+
+    <!-- Criando o nosso formulário -->
+    <form id="Contato" method="POST">
+        <!--Inserindo a área do nosso formlário com a tag a <fieldset>-->
+            <fieldset>
+                <!--Inserindo uma legenda no fomrulario com a tag <legend>-->
+                    <legend>Preencha os campos do nosso formulário </legend>
+                    <label>Nome:</label><input type="text" name="nome" class="campo_nome" required><br><br>
+                    <label>Email:</label><input type="email" name="email" class="campo_email" required><br><br>
+                    <label>Senha:</label><input type="password" name="senha" required><br><br>
+                    <label>Gênero:</label>
+                    <!--radio button (pode colocar quantos quiser. Value=o que vai para o banco de dados)-->
+                    <input type="radio" name="genero" value="Feminino">Feminino
+                    <input type="radio" name="genero" value="Masculino">Masculino
+                    <input type="radio" name="genero" value="Não informado">Não informado<br><br>
+                    <!--Criando um menu do tipo dropdown (escolha de opções em caixa)-->
+                    <label>Escolha o curso que deseja fazer:</label>
+                    <select required> 
+                        <option name="" value""></option>"
+                        <option name="curso" value="HTML">HTML</option>
+                        <option name="curso" value="CSS">CSS</option>
+                        <option name="curso" value="XML">XML</option>
+                        <option name="curso" value="JS">JavaScript</option>
+                    </select><br><br>
+                    <!--Criando um botão de checkbox (permite escolher mais de um item)-->
+                    <label>Escolha o período que deseja fazer o curso</label>
+                    <input type="checkbox"name="check" value="Manhã">Manhã
+                    <input type="checkbox"name="check" value="Tarde">Tarde
+                    <input type="checkbox"name="check" value="Noite">Noite<br><br>
+                    <!--Abrindo o calendário para escolha da data-->
+                    <label>Escolha a data da realizaçao do curso</label>
+                    <input type="date" nome="date"><br><br>
+                    <!--Criando uma caixa de mensagem-->
+                    <label>Mensagem:</label><br>
+                    <textarea cols="35" rows="4" name="mensagem"></textarea><br><br>
+                    <!--Anexando um documento-->
+                    <label>Por favor anexar um comprovante de residência:</label>
+                    <input type="file" name="arquivo"><br><br>
+
+                    <!--Criando um botão para envio dos dados-->
+                    <input type="submit" value="Enviar">
+
+            </fieldset>
+
+
+    </form>
+
+
+
+</body>
+</html>
